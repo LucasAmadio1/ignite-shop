@@ -6,11 +6,13 @@ import { Container, Header } from "../styles/pages/app";
 
 globalStyles()
 
+import Image from 'next/image'
+
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <Container>
       <Header>
-        <img src={logoImg.src} /> 
+        <Image src={logoImg} alt=""/> 
       </Header>
 
       <Component {...pageProps} />
